@@ -1,0 +1,3 @@
+[submodule "lib/mp-sdk-ruby"]
+	path = lib/mp-sdk-ruby
+	url = https://github.com/joelibaceta/mp-sdk-ruby
