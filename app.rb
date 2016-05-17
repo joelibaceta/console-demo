@@ -4,7 +4,7 @@ require 'rubygems'
 require 'tempfile'
 require 'open3'
 require 'json'
-require_relative  'lib/mp-sdk-ruby/lib/mercadopago'
+
 
 get '/' do
   "Hello World!"
@@ -17,6 +17,7 @@ post '/execute' do
   file=File.new('random.rb', 'w')
   
   file.puts <<-EOF 
+    require_relative  'lib/mp-sdk-ruby/lib/mercadopago'
     #require File.expand_path(__dir__) + '/lib/mp-sdk-ruby/lib/mercadopago' 
     
   EOF
