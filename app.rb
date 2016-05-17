@@ -4,14 +4,19 @@ require 'rubygems'
 require 'tempfile'
 require 'open3'
 require 'json'
+require 'sinatra/cross_origin'
 
+configure do
+  enable :cross_origin
+end
 
 get '/' do
   "Hello World!"
 end
 
 post '/execute' do
-  p request.params["ruby_code"]
+  cross_origin 
+  
   code=request.params["ruby_code"] 
   
   file=File.new('random.rb', 'w')
