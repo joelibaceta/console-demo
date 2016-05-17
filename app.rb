@@ -17,7 +17,7 @@ post '/execute' do
   file=File.new('random.rb', 'w')
   
   file.puts <<-EOF 
-    require File.expand_path(__dir__) + '/lib/mp-sdk-ruby/lib/mercadopago' 
+    #require File.expand_path(__dir__) + '/lib/mp-sdk-ruby/lib/mercadopago' 
     
   EOF
   
