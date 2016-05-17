@@ -15,15 +15,17 @@ get '/' do
 end
 
 post '/execute' do
+  
   cross_origin 
+  
+  p request
   
   code=request.params["ruby_code"] 
   
   file=File.new('random.rb', 'w')
   
   file.puts <<-EOF 
-    require_relative  'lib/mp-sdk-ruby/lib/mercadopago'
-    #require File.expand_path(__dir__) + '/lib/mp-sdk-ruby/lib/mercadopago' 
+    require_relative 'lib/mp-sdk-ruby/lib/mercadopago'
     
   EOF
   
