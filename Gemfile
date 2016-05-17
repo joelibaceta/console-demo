@@ -7,4 +7,4 @@ gem 'sinatra'
 gem 'logger'
 
 
- 
+ gem "sinatra-cross_origin"
