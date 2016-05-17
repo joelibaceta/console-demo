@@ -1,9 +1,4 @@
-GIT
-  remote: git@github.com:joelibaceta/sicuro.git
-  revision: 1a24686fae555fedbbd4265875213896547dbb57
-  specs:
-    sicuro (0.22.0)
-      standalone (~> 0.6.0)
+ 
 
 GEM
   remote: https://rubygems.org/
