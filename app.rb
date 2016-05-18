@@ -24,7 +24,7 @@ post '/execute' do
   
   code.gsub('\n', '; ')
   
-  file=File.new('random.rb', 'w')
+  file=File.new('virtual_script.rb', 'w')
   
   file.puts <<-EOF 
     load 'lib/mp-sdk-ruby/lib/mercadopago.rb'
@@ -34,7 +34,7 @@ post '/execute' do
   file.puts(code)
   file.close
   
-  stdin, stdout, stderr = Open3.popen3("ruby -W1 " + File.expand_path(__dir__) + "/random.rb")
+  stdin, stdout, stderr = Open3.popen3("ruby -W1 " + File.expand_path(__dir__) + "/virtual_script.rb")
    
   
   stdout_str = stdout.readlines
