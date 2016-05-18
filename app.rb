@@ -25,7 +25,7 @@ post '/execute' do
   file=File.new('random.rb', 'w')
   
   file.puts <<-EOF 
-    require_relative 'lib/mp-sdk-ruby/lib/mercadopago'
+    require_relative '/lib/mp-sdk-ruby/lib/mercadopago'
     
   EOF
   

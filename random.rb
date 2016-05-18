@@ -1,3 +1,3 @@
     require_relative 'lib/mp-sdk-ruby/lib/mercadopago'
     
-puts `ls `
+if([true,false].sample);puts "ola k ase";else;puts ":C";end;
