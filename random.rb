@@ -1,3 +1,3 @@
-    require_relative 'lib/mp-sdk-ruby/lib/mercadopago'
+    load 'lib/mp-sdk-ruby/lib/mercadopago.rb'
     
-if([true,false].sample);puts "ola k ase";else;puts ":C";end;
+puts "Hello world";puts "ola k ase";puts "hello world 2";
