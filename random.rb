@@ -1,5 +1,5 @@
    
-     
+    
     load 'lib/mp-sdk-ruby/lib/mercadopago.rb'
     
     ActiveREST::RESTClient.config do
