@@ -5,6 +5,6 @@ gem 'rake'
 gem 'sinatra'
 
 gem 'logger'
-
+gem 'colorize'
 gem 'faker'
  gem "sinatra-cross_origin"

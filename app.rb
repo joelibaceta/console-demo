@@ -5,6 +5,7 @@ require 'tempfile'
 require 'open3'
 require 'json'
 require 'sinatra/cross_origin'
+require 'colorize'
 
 configure do
   enable :cross_origin
