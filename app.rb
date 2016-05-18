@@ -22,7 +22,7 @@ post '/execute' do
   
   code=request.params["ruby_code"]
   
-  code.gsub('\n', '; ')
+  
   
   file=File.new('virtual_script.rb', 'w')
   
