@@ -6,5 +6,5 @@ gem 'sinatra'
 
 gem 'logger'
 
-
+gem 'faker'
  gem "sinatra-cross_origin"
