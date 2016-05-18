@@ -27,8 +27,7 @@ post '/execute' do
   file=File.new('virtual_script.rb', 'w')
   
   file.puts <<-EOF 
-  
-    require 'faker'
+     
     load 'lib/mp-sdk-ruby/lib/mercadopago.rb'
     
   EOF
