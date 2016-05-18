@@ -20,7 +20,9 @@ post '/execute' do
   
   p request
   
-  code=request.params["ruby_code"] 
+  code=request.params["ruby_code"]
+  
+  code.gsub('\n', '; ')
   
   file=File.new('random.rb', 'w')
   
