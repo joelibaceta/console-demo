@@ -70,7 +70,7 @@
 
     #puts preference.inspect
 
-    p preference
+     puts MercadoPago::Preference.friendly_print_structure
 
     #puts preference.save
     #
