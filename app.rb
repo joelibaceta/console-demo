@@ -33,6 +33,7 @@ post '/execute' do
     load 'lib/mp-sdk-ruby/lib/mercadopago.rb'
     
     require 'faker'  
+    require 'pp'
     
   EOF
   
