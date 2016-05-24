@@ -21,6 +21,13 @@ get '/notifications' do
   p request
 end
 
+get '/file/by_id' do
+  id = params[:id]
+  file = File.read(File.expand_path(__dir__) + "/lib/mp-sdk-ruby/lib/mercadopago/active_rest/lib/active_rest/notification_" + id + "/_.json")
+  data_hash = JSON.parse(file)
+  return data_hash
+end
+
 get '/last_json.json' do
   file = File.read(File.expand_path(__dir__) + "/lib/mp-sdk-ruby/lib/mercadopago/sample/preference.json")
   data_hash = JSON.parse(file)
