@@ -1,4 +1,4 @@
-require './lib/mp-sdk-ruby/lib/mercadopago/mpmiddleware'
+require_relative 'lib/mp-sdk-ruby/lib/mercadopago/mpmiddleware'
 use MPMiddleware
 
 require './app'
