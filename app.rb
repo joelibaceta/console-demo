@@ -15,6 +15,10 @@ get '/' do
   "Hello World!"
 end
 
+get '/notifications' do
+  p request
+end
+
 get '/last_json.json' do
   file = File.read(File.expand_path(__dir__) + "/lib/mp-sdk-ruby/lib/mercadopago/sample/preference.json")
   data_hash = JSON.parse(file)
@@ -25,8 +29,7 @@ post '/execute' do
   
   cross_origin 
   
-  p request
-  
+   
   code=request.params["ruby_code"]
   
   
