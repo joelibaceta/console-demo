@@ -7,6 +7,8 @@ require 'json'
 require 'sinatra/cross_origin'
 require 'colorize'
 
+
+
 configure do
   enable :cross_origin
 end
@@ -32,7 +34,7 @@ post '/execute' do
    
   code=request.params["ruby_code"]
   
-  
+  p request
   
   file=File.new('virtual_script.rb', 'w')
   
