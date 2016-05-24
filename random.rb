@@ -12,9 +12,9 @@
       http_param :ca_file, nil
     end
     
-    MercadoPago::Settings.CLIENT_ID = "3964826791704277"
+    MercadoPago::Settings.CLIENT_ID = "6295877106812064"
 
-    MercadoPago::Settings.CLIENT_SECRET = "TcLhELCaYEFzm522gJxua6tBRf0VbSMd"
+    MercadoPago::Settings.CLIENT_SECRET = "N8h64ko1SbY2ucyZVmOMyBJN1B82ajZp"
     
     preference = MercadoPago::Preference.new
     
@@ -61,7 +61,9 @@
     
     preference.save
     
+    puts "PREFERENCE INSPECT"
     puts preference.inspect
+    puts "PREFERENCE json"
     puts preference.to_json
     
     puts preference.id
