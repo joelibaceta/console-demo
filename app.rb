@@ -64,7 +64,7 @@ post '/execute' do
   stderr_str = stderr.readlines
    
   
-  return {stdout: stdout_str.to_json, stderr: stderr_str.to_json}.to_json
+  return {stdout: stdout_str, stderr: stderr_str}.to_json
 
 end
 
